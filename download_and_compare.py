@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime
 
-URL = "https://example.com"  # 替换为您要监控的网页 URL
+URL = "https://juejin.cn/post/7413418434573533193"  # 替换为您要监控的网页 URL
 
 def download_webpage():
     response = requests.get(URL)

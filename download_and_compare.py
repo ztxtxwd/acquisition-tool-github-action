@@ -22,6 +22,8 @@ def save_webpage(content):
 
 def compare_and_save():
     new_content = download_webpage()
+    if not os.path.exists(SAVE_DIR):
+        os.makedirs(SAVE_DIR)
     
     files = [f for f in os.listdir(SAVE_DIR) if f.startswith("webpage_")]
     latest_file = max(files, default=None) if files else None
